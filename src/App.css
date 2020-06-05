@@ -1,0 +1,165 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  min-height: 100%;
+}
+
+.main-body {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.weatherContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+.frosted {
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  background: inherit;
+  overflow: hidden;
+}
+
+.frosted:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(3px);
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-temp {
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1.2rem;
+}
+
+.icon-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+.icon-container .wi {
+  font-size: 8rem;
+}
+
+.main-description {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin: 0;
+}
+
+p {
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.wi {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: 5rem;
+}
+
+.wi-owm-800 {
+  color: yellow;
+}
+
+.weather-detail {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  overflow-y: hidden;
+  width: 80%;
+  margin: 1rem auto;
+  position: relative;
+}
+
+.weather-details > span {
+  color: #fff;
+  font-size: 1.3rem;
+  flex: 0 0 auto;
+  margin: .2rem 1rem .2rem;
+}
+
+.weather-details > span > i {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.sevenDay {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+  overflow-y: hidden;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+.sevenDay > div {
+  flex: 1 1 auto;
+  margin: .2rem 1rem .2rem;
+}
+
+.sevenDay-inner {
+  padding: 0 .5rem;
+}
+
+.sevenDay-inner i {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 15px 5px 0;
+  padding: 5px 5px 5px 0;
+  font-size: 2rem;
+}
+
+.sevenDay-inner p {
+  font-size: .9rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sevenDay-inner > p:last-child {
+  height: 47px;
+}
+
+.daily-temp {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.daily-temp p:first-child {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
