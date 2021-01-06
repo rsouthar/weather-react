@@ -5,7 +5,7 @@ import {
   GEOLOCATION_DENIED
 } from './type';
 
-const API_KEY = '';
+const API_KEY = '9e41248a89f22ccb8cbe479cb75311e6';
 
 export const fetchWeather = (lat, lon) => async dispatch => {
     const response = await openweathermap.get(`onecall`, {
